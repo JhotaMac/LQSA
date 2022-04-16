@@ -1,0 +1,1208 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#"
+     xml:base="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA">
+        <rdfs:comment xml:lang="en">Ontology for: TV Series - La que se avecina (LQSA). 
+
+@Author:
+Jesús Macías Fernández</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasEpisodes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasEpisodes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Episode"/>
+        <rdfs:label>hasEpisodes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasLeading_Role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasLeading_Role">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role"/>
+        <rdfs:label>hasLeading_Role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasSupporting_Role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasSupporting_Role">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Supporting_Role"/>
+        <rdfs:label>hasSupporting_Role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasWon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasWon">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Prizewinner"/>
+        <rdfs:label>hasWon</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isADirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isADirector">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#director"/>
+        <rdfs:label>isADirector</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isAProducer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isAProducer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#executiveProducer"/>
+        <rdfs:label>isAProducer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isAScreenwriter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isAScreenwriter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#author"/>
+        <rdfs:label>isAScreenwritter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isComedian -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isComedian">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Comedian"/>
+        <rdfs:label>isComedian</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isMarried_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#isMarried_with">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Character"/>
+        <rdfs:label>isMarried_with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#workAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#workAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Profession"/>
+        <rdfs:label>workAs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>People have Age</rdfs:comment>
+        <rdfs:label>hasAge</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasAwards -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasAwards">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Prizewinner"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Awards of a Person</rdfs:comment>
+        <rdfs:label>hasAwards</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasBirthDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasBirthDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>People have BirthDate</rdfs:comment>
+        <rdfs:label>hasBirthDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasGender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>female</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>male</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>People have Gender</rdfs:comment>
+        <rdfs:label>hasGender</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasNick -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasNick">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A character can have a nickname</rdfs:comment>
+        <rdfs:label>hasNick</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasShare -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasShare">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Season"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasTagline -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasTagline">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Comedian"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>A character can have some Taglines</rdfs:comment>
+        <rdfs:label>hasTagline</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:comment>Class Actor</rdfs:comment>
+        <rdfs:label>Actor</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/Actor</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Actress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Actress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:comment>Class Actress</rdfs:comment>
+        <rdfs:label>Actress</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Actor</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Age -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Age">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Bio"/>
+        <rdfs:comment>Class of a person&apos;s Age.</rdfs:comment>
+        <rdfs:label>Age</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/age</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Award">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Class Award</rdfs:comment>
+        <rdfs:label>Award</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Award</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Bio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Bio">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Class of biographical data</rdfs:comment>
+        <rdfs:label>Bio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#BirthDate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#BirthDate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Bio"/>
+        <rdfs:comment>Class of a person&apos;s date of birth.</rdfs:comment>
+        <rdfs:label>BirthDate</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/birthDate</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Character">
+        <rdfs:comment>Class of a Fictional Character</rdfs:comment>
+        <rdfs:label>Character</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/FictionalCharacter</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Comedian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Comedian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:comment>Class Comedian</rdfs:comment>
+        <rdfs:label>Comedian</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/Comedian</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Day -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Day">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#BirthDate"/>
+        <rdfs:comment>Class Day</rdfs:comment>
+        <rdfs:label>Day</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/day</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Episode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Episode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Season"/>
+        <rdfs:comment>Class Episode</rdfs:comment>
+        <rdfs:label>Episode</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/episode</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Fishmonger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Fishmonger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Profession"/>
+        <rdfs:comment>Class Fishmonger</rdfs:comment>
+        <rdfs:label>Fishmonger</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Fishmonger</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Gender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Bio"/>
+        <rdfs:comment>Class of a person&apos;s gender.</rdfs:comment>
+        <rdfs:label>Gender</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Gender</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Iris -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Iris">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Award"/>
+        <rdfs:comment>Class Iris TV Series Awards</rdfs:comment>
+        <rdfs:label>Iris</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Latitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Latitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Locations"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Longitude"/>
+        <rdfs:comment>Class Latitude</rdfs:comment>
+        <rdfs:label>Latitude</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Latitude</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Supporting_Role"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Supporting_Role"/>
+        <rdfs:comment>Class Leading_Role</rdfs:comment>
+        <rdfs:label>Leading_Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Locations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Locations">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Class of filming location</rdfs:comment>
+        <rdfs:label>Location</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/location</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Longitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Longitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Locations"/>
+        <rdfs:comment>Class Longitude</rdfs:comment>
+        <rdfs:label>Longitude</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Longitude</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#MiM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#MiM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Award"/>
+        <rdfs:comment>Class MiM TV Series Awards</rdfs:comment>
+        <rdfs:label>MiM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Month -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Month">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#BirthDate"/>
+        <rdfs:comment>Class Month</rdfs:comment>
+        <rdfs:label>Month</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/month</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Musician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Musician">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Profession"/>
+        <rdfs:comment>Class Musician</rdfs:comment>
+        <rdfs:label>Musician</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Musician</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Class Person</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/person</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Politician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Politician">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Profession"/>
+        <rdfs:comment>Class Politician</rdfs:comment>
+        <rdfs:label>Politician</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Politician</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Presidency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Presidency">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Class Presidency of neighbours community</rdfs:comment>
+        <rdfs:label>Presidency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Prizewinner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Prizewinner">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasAwards"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:comment>Class Prizewinner, has been awarded for this TVseries (infered)</rdfs:comment>
+        <rdfs:label>Prizewinner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Profession -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Profession">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Class character professions</rdfs:comment>
+        <rdfs:label>Profession</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/profession</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Relationship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Relationship">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Season">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Class Season</rdfs:comment>
+        <rdfs:label>Season</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/season</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Shangay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Shangay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Award"/>
+        <rdfs:comment>Class Shangay TV Series Awards</rdfs:comment>
+        <rdfs:label>Shangay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Share -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Share">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Season"/>
+        <rdfs:comment>Class Share. TV share between 0 and 100</rdfs:comment>
+        <rdfs:label>Share</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Supporting_Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Supporting_Role">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:comment>Class Supporting_Role</rdfs:comment>
+        <rdfs:label>Supporting_Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Tagline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Tagline">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Waiter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Waiter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Profession"/>
+        <rdfs:comment>Class Waiter</rdfs:comment>
+        <rdfs:label>Waiter</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Waiting_staff</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Wholesaler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Wholesaler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Profession"/>
+        <rdfs:comment>Class Wolesaler</rdfs:comment>
+        <rdfs:comment>Wholesaler</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Category:Wholesalers</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#BirthDate"/>
+        <rdfs:comment>Class Year</rdfs:comment>
+        <rdfs:label>Year</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/year</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:label>Author</rdfs:label>
+        <rdfs:label>Class Author</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/author</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:comment>Class Director</rdfs:comment>
+        <rdfs:label>Director</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/director</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#executiveProducer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#executiveProducer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+        <rdfs:comment>Class executiveProducer</rdfs:comment>
+        <rdfs:label>ExecutiveProducer</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/executiveProducer</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Amador_Rivas_Latorre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Amador_Rivas_Latorre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Character"/>
+        <isComedian rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Amador_Rivas_Latorre"/>
+        <hasGender>male</hasGender>
+        <hasNick>Gañan</hasNick>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Antonio_Recio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Antonio_Recio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Wholesaler"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Enrique_Pastor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Enrique_Pastor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Politician"/>
+        <hasGender>male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Eva_Isanta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Eva_Isanta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role"/>
+        <hasGender>female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Isabel_Ordaz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Isabel_Ordaz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Iris"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Shangay"/>
+        <hasWon rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Isabel_Ordaz"/>
+        <hasGender>female</hasGender>
+        <rdfs:comment>Isabel Ordaz: Actriz</rdfs:comment>
+        <rdfs:label>Isabel_Ordaz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Maite_Figueroa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Maite_Figueroa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Character"/>
+        <hasNick>Cuqui</hasNick>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Maria_Casal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Maria_Casal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Shangay"/>
+        <hasWon rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Maria_Casal"/>
+        <hasGender>female</hasGender>
+        <rdfs:comment>Mar&apos;ia Casal: Actress</rdfs:comment>
+        <rdfs:label>Maria_Casal</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Mar%C3%ADa_Casal</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Raluca_Petrescu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Raluca_Petrescu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Character"/>
+        <hasGender>female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Merengue,_merengue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Merengue,_merengue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Tagline"/>
+        <rdfs:comment>Tagline of Amador</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Alberto_Caballero -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Alberto_Caballero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Iris"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#executiveProducer"/>
+        <hasWon rdf:resource="https://dbpedia.org/page/Alberto_Caballero"/>
+        <hasGender>male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Esther_Soto -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Esther_Soto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Supporting_Role"/>
+        <hasGender>female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Fernando_Tejero -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Fernando_Tejero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role"/>
+        <hasGender>male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Laura_Caballero -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Laura_Caballero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Iris"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#director"/>
+        <hasWon rdf:resource="https://dbpedia.org/page/Laura_Caballero"/>
+        <hasGender>female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Nacho_Guerreros -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Nacho_Guerreros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role"/>
+        <hasGender>male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Pablo_Chiapella -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Pablo_Chiapella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role"/>
+        <hasGender>male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Jos%C3%A9_Luis_Gil -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Jos%C3%A9_Luis_Gil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role"/>
+        <hasGender>male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Nathalie_Sese%C3%B1a -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Nathalie_Sese%C3%B1a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#MiM"/>
+        <hasWon rdf:resource="https://dbpedia.org/page/Nathalie_Sese%C3%B1a"/>
+        <hasGender>female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://es.dbpedia.org/page/Jordi_S%C3%A1nchez -->
+
+    <owl:NamedIndividual rdf:about="https://es.dbpedia.org/page/Jordi_S%C3%A1nchez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Iris"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Leading_Role"/>
+        <hasWon rdf:resource="https://es.dbpedia.org/page/Jordi_S%C3%A1nchez"/>
+        <hasGender>male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRuleEnabled>
+        <rdfs:comment>Rule Prizewinner</rdfs:comment>
+        <rdfs:label>Rule1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Award"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasAwards"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Prizewinner"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRuleEnabled>
+        <rdfs:comment>Rule Actress. Class is Actress if Gender = &quot;female&quot;</rdfs:comment>
+        <rdfs:label>Rule3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasGender"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                                <swrl:argument2>female</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Actress"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRuleEnabled>
+        <rdfs:comment>Rule Actor. Class is Actor if Gender = &quot;male&quot;</rdfs:comment>
+        <rdfs:label>Rule2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasGender"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                                <swrl:argument2>male</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Actor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRuleEnabled>
+        <rdfs:comment>Rule Comedian</rdfs:comment>
+        <rdfs:label>Rule 4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Tagline"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#hasTagline"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txuso/ontologies/2022/3/SerieLQSA#Comedian"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
